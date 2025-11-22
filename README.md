@@ -4,15 +4,21 @@ Visite minha documentacao
 
 [![image](/pic/print.png)](https://lvgalvao.github.io/workshop_02_aovivo/)
 
+1. Identificar bibliotecas que serão usadas:
+. pyenv
+. pydantic
+. poetry
+. pytest
 
-1. Clone o repositório:
+Exemplo: consulta https://pandera.readthedocs.io/en/stable/ 
+. pandera 
+versões de python que serão aceitas no projeto
+No caso o Pandera precisa do python 3.11, então será usada para iniciar o projeto
 
-```bash
-git clone https://github.com/lvgalvao/workshop_02_aovivo.git
-cd workshop_02_aovivo
-```
 
-2. Configure a versão correta do Python com `pyenv`:
+
+
+2. Configure a versão correta do Python com `pyenv` (versionar o python, multiplas versões de python):
 
 ```bash
 pyenv install 3.11.5
@@ -20,17 +26,22 @@ pyenv local 3.11.5
 ```
 
 3. Configurar poetry para Python version 3.11.5 e ative o ambiente virtual:
+poetry resolver todos os problemas de path do windows
 
 ```bash
+poetry init
 poetry env use 3.11.5
 poetry shell
+
 ```
 
 4. Instale as dependencias do projeto:
 
 ```bash
-poetry install
+poetry install --no-root
 ```
+Obs: instala todas as dependências,
+mas não instala o projeto atual como pacote.
 
 5. Execute os testes para garantir que tudo está funcionando como esperado:
 
@@ -48,4 +59,14 @@ poetry run task test
 
 ```bash
 poetry run python app/etl.py
+```
+
+
+8. Executando mkdocs
+
+```bash
+poetry add mkdocs
+mkdocs new .
+poetry run mkdocs serve
+
 ```
