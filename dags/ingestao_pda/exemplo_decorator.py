@@ -4,11 +4,11 @@ from airflow.decorators import dag, task
 
 
 @dag(
-    dag_id="exemplo_taskflow_ingestao_pda",
+    dag_id="exemplo_taskflow",
     start_date=datetime(2025, 10, 13),
     schedule=None,
     catchup=False,
-    tags=["exemplo"],
+    tags=["exemplo", "ingestao", "pda"],
 )
 def exemplo_taskflow_dag():
 
