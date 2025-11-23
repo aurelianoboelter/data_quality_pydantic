@@ -8,7 +8,7 @@ from airflow.decorators import dag, task
     start_date=datetime(2025, 10, 13),
     schedule=None,
     catchup=False,
-    tags=["exemplo", "dim_institucional"],
+    tags=["exemplo", "dim_institucional", "teste"],
 )
 def exemplo_taskflow_dag():
 
