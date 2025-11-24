@@ -4,7 +4,7 @@ from airflow.decorators import dag, task
 
 
 @dag(
-    dag_id="exemplo_taskflow_02",
+    dag_id="exemplo_taskflow_pda",
     start_date=datetime(2025, 10, 13),
     schedule=None,
     catchup=False,
@@ -22,7 +22,7 @@ def exemplo_taskflow_dag():
 
     @task()
     def carregar_dados(dados_transformados):
-        print(f"Carregando dados: {dados_transformados}")
+        print(f"Carregando dados : {dados_transformados}")
 
     # Definindo dependências automaticamente
     dados = extrair_dados()
