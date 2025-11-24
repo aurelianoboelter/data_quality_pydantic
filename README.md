@@ -69,5 +69,5 @@ poetry run mkdocs serve
     ```
 
    **Explicação:**
-    #  --dev adiciona o pre-commit como dependência de desenvolvimento (não será incluído em produção).
-    #  Isso registra automaticamente o pacote no seu pyproject.toml e poetry.lock.
+     1 -  --dev adiciona o pre-commit como dependência de desenvolvimento (não será incluído em produção).
+     2 -    Isso registra automaticamente o pacote no seu pyproject.toml e poetry.lock.
