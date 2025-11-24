@@ -47,12 +47,12 @@ poetry show ruff (confirma a instalação)
 poetry add --group dev ruff
 ```
 
-# O Ruff vai corrigir automaticamente:
+### O Ruff vai corrigir automaticamente:
 
-1 - espaçamento
-2 - imports desnecessários,
-3 - indentação,
-4 - linhas em branco extras, etc.
+1. Espaçamento
+2. Imports desnecessários,
+3. Indentação,
+4. Linhas em branco extras, etc.
 
 6. **Executando mkdocs -  Opcionais**
 
