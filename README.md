@@ -1,8 +1,6 @@
-#
 
 
-
-1. **Identificar bibliotecas que serão usadas:**
+1. **Adotando um modelo otimizado e profissional de configuração para Ruff + Black + Airflow + Poetry + pre-commit, balanceando padronização e desempenho (usado em pipelines CI/CD de projetos reais de dados e airflow):**
 . pyenv
 . pydantic
 . poetry
@@ -49,6 +47,12 @@ poetry show ruff (confirma a instalação)
 poetry add --group dev ruff
 ```
 
+# O Ruff vai corrigir automaticamente:
+
+1 - espaçamento
+2 - imports desnecessários,
+3 - indentação,
+4 - linhas em branco extras, etc.
 
 6. **Executando mkdocs -  Opcionais**
 
