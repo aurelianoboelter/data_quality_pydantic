@@ -22,7 +22,7 @@ def exemplo_taskflow_dag():
 
     @task()
     def carregar_dados(dados_transformados):
-        print(f"Carregando dados : {dados_transformados}")
+        print(f"Carregando dados: {dados_transformados}")
 
     # Definindo dependências automaticamente
     dados = extrair_dados()
