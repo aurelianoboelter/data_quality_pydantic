@@ -4,7 +4,7 @@ from airflow.decorators import dag, task
 
 
 @dag(
-    dag_id="exemplo_taskflow_01",
+    dag_id="exemplo_taskflow",
     start_date=datetime(2025, 10, 13),
     schedule=None,
     catchup=False,
